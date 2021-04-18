@@ -7,7 +7,7 @@
     <title>Montechello</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap&family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
     <link
@@ -25,10 +25,74 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Header -->
+    <header
+      class="header"
+      style="background-image: url('./images/header-bg.jpg')"
+    >
+      <div class="container">
+        <nav class="header__nav">
+          <div class="logo logo--header">
+            <img src="./images/logo.svg" alt="Montichello" />
+          </div>
+          <ul>
+            <li class="active">
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">News</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="header__social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </nav>
+        <div class="header__slider">
+          <div class="header__slide">
+            <h2>Simple & Modern</h2>
+            <h3>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+          </div>
+          <div class="header__slide">
+            <h2>Simple & Modern</h2>
+            <h3>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+          </div>
+          <div class="header__slide">
+            <h2>Simple & Modern</h2>
+            <h3>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+          </div>
+          <div class="header__slide">
+            <h2>Simple & Modern</h2>
+            <h3>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+          </div>
+          <div class="header__slide">
+            <h2>Simple & Modern</h2>
+            <h3>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h3>
+          </div>
+        </div>
+        <div class="header__scroll">
+          <button type="button"><i class="fas fa-chevron-down"></i></button>
+        </div>
+      </div>
+    </header>
+    <!-- End header -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
       integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
