@@ -100,7 +100,8 @@ html {
   transition: all 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
+  outline: none;
   background: #000;
   color: #fff;
 }
@@ -136,7 +137,8 @@ html {
   margin-right: 0px;
 }
 
-.social a:hover {
+.social a:hover, .social a:focus {
+  outline: none;
   background: rgba(255, 255, 255, 0.4);
 }
 
@@ -220,7 +222,8 @@ html {
   transition: all 0.3s ease;
 }
 
-.header__nav ul li a:hover {
+.header__nav ul li a:hover, .header__nav ul li a:focus {
+  outline: none;
   letter-spacing: 2px;
 }
 

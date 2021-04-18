@@ -63,7 +63,9 @@ html {
   padding: 1.14em 2.8em;
   cursor: pointer;
   transition: all 0.3s ease;
-  &:hover {
+  &:hover,
+  &:focus {
+    outline: none;
     background: #000;
     color: #fff;
   }
@@ -89,7 +91,9 @@ html {
     &:last-child {
       margin-right: 0px;
     }
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       background: rgba(255, 255, 255, 0.4);
     }
   }
