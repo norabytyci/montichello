@@ -20,7 +20,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1230px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 3rem;
@@ -31,4 +31,33 @@ html {
   &--header {
     max-width: 24.1rem;
   }
+}
+
+.headline {
+  font-family: $font-mont;
+  font-size: 4.4rem;
+  font-weight: bold;
+  color: $black;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  &::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+    background: $black;
+    height: 1px;
+    width: 10rem;
+    top: -3rem;
+  }
+}
+
+.btn {
+  border: 1px solid $black;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $font-mont;
+  color: #000;
+  padding: 1.14em 2.8em;
 }

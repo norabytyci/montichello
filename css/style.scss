@@ -160,3 +160,82 @@
     }
   }
 }
+
+/**
+* ====================================
+* About
+* ====================================
+*/
+.about {
+  margin-top: 10rem;
+  margin-bottom: 14rem;
+  &__layout {
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -5.7rem;
+      left: 0;
+      width: 36.5vw;
+      height: 47rem;
+      z-index: -1;
+      background: $light-blue;
+    }
+    margin-top: 20rem;
+    &.reverse {
+      .about__content {
+        padding-left: 0px;
+        padding-right: 7rem;
+      }
+      .container {
+        flex-direction: row-reverse;
+      }
+      &::before {
+        left: unset;
+        right: 0;
+        background: $violet;
+      }
+    }
+    .container {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  &__image {
+    flex-shrink: 0;
+  }
+  &__content {
+    color: $black;
+    padding-left: 7rem;
+    p:first-child {
+      font-size: 2.2rem;
+      font-family: $font-mont;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 4.4rem;
+      margin-bottom: 19px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.8rem;
+      line-height: 1.6em;
+    }
+    .btn {
+      margin-top: 4.1rem;
+      display: inline-block;
+    }
+    .location {
+      font-size: 15px;
+      margin-top: 6rem;
+      padding-bottom: 2rem;
+      span {
+        font-style: italic;
+        color: #000;
+        display: inline-block;
+        margin-left: 1rem;
+      }
+    }
+  }
+}
